@@ -1,0 +1,20 @@
+{
+  "name": "git-test",
+  "homepage": "https://github.com/PanKovskiy/git-test",
+  "authors": [
+    "PanKovskiy"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
