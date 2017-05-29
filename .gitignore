@@ -1,2 +1,5 @@
+vendors
+
 # IDE files
-.idea
+.idea/
+*.iml
