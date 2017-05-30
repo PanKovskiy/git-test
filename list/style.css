@@ -1,0 +1,62 @@
+/*ul{
+    border: 1px solid blue;
+}*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    /*grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+}
+
+h3{
+    color: red;
+}
+
+.one li:nth-child(3n) { /* вибрати кожен елемент <li>, що є "номер попорядку елемента=3*n+0", де n=0, 1, 2, ... дочірнім елементом із класу "one"*/
+    background: blue; /* колір фону синій*/
+}
+
+.two li:nth-of-type(3n) {  /* вибрати кожен елемент <li>, що є "номер попорядку елемента=3*n+0", де n=0, 1, 2, ... дочірнім елементом <li> із класу "two"*/
+    background: blue;    /* колір фону синій*/
+}
+
+.three h3:only-of-type{ /*вибрати кожен дочірній елемент <h1> що є єдиним елементом <h1> батьківського класу "three"*/
+    background: blue;   /* колір фону синій*/
+}
+
+li:last-child { /*вибрати кожен елемент <li> що є останнім елементом свого батьківського класу*/
+    background: yellow; /*колір фону жовтий*/
+}
+.one {
+    list-style-type: circle; /*маркер у вигляді кола*/ 
+}
+
+.two {
+    list-style-type: square; /*маркер у вигляді квадрата*/
+}
+
+.four {
+    list-style-position: outside; /* маркери поза рядками списку*/
+}
+
+.five {
+    list-style-position: inside ; /* маркери біля рядка списку*/
+}
+
+.four li,.five li {
+    border: 1px solid tomato;    
+}
+
+.six {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.six li:before {
+    content: "#";
+    color: lawngreen;
+    padding-right: 5px;
+}
+
